@@ -1,0 +1,43 @@
+﻿body {
+display: flex;
+
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #000;
+
+
+}
+
+h2 {
+
+	position: relative;
+	font-size: 4em;
+	color: #fff;
+	overflow: hidden;
+}
+
+h2:before {
+
+	content: '';
+	position: absolute;
+	left: 0%;
+	width: 120%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent 0%, #000 5% 100% );
+	animation: animate 10s linear forwards ;
+}
+
+@keyframes animate {
+             0%{
+             left: -20%;
+             }
+             50%
+             {
+             left: 120%;
+             }
+             100%
+             {
+             left: -20%;
+             }
+}
